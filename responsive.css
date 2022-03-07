@@ -1,0 +1,212 @@
+@media (max-width: 1030px) {
+  main section div {
+    padding: 0 5rem;
+  }
+
+  #fruit section h2,
+  #fruit section p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 926px) {
+  #fruit section h2,
+  #fruit section p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 872px) {
+  html {
+    font-size: 50%;
+  }
+
+  body{
+   scrollbar-width: none;
+  }
+
+  #menu ~ .top nav  {
+    display: none;
+    transition: 0.3s;
+  }
+
+  header h1 {
+    font-size: 7rem;
+    padding: 10%;
+    margin-top: 0;
+  }
+
+  .top img{
+    height: 4rem;
+  }
+
+  .one,
+  .two,
+  .three {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  .menu-toggle{
+    position: absolute;
+    right: 0;
+    top: 2%;
+  }
+
+  #menu.on .side-bar {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80vw;
+    height: 80vh;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  #menu.on .side-bar::after {
+    content: '';
+    width:0;
+    height:0;
+    border: 20px solid;
+    border-color: rgba(0,0,0,0) #fff #fff rgba(0,0,0,0);
+    position: absolute;
+    top: -5rem;
+    right: 0;
+  }
+
+  #menu.on .menu-toggle {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+
+  #menu.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  #menu.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  #menu.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  #menu.on ~ .top nav {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: calc(50vw - 100px);
+    z-index: 11;
+    color: hsl(213, 9%, 39%);
+  }
+
+  header .top nav ul {
+    flex-direction: column;
+  }
+
+  header .top nav ul a li {
+    color: hsl(213, 9%, 39%);
+    padding: 4rem 0;
+    font-size: 3rem;
+  }
+
+  header .top nav ul #btn-contact li {
+    background-color: hsl(51, 100%, 49%);
+    padding: 2rem;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  #img-egg {
+    order: -1;
+  }
+
+  .border {
+    display: none;
+  }
+
+  main section div {
+    text-align: center;
+    width: 100%;
+    padding: 10rem 10%;
+  }
+
+  main section div p {
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  #fruit {
+    flex-direction: column;
+  }
+
+  #fruit section h2,
+  #fruit section p {
+    width: 100%;
+    padding: 0 5rem;
+  }
+
+  #comments {
+    flex-direction: column;
+  }
+
+  #note h2 {
+    margin-bottom: 0;
+  }
+
+  blockquote {
+    padding: 10rem 0;
+  }
+
+  blockquote p {
+    text-align: center;
+  }
+
+  #gallery {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #gallery img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 436px) {
+  section img {
+    width: 100vw;
+  }
+
+  #note #comments blockquote img {
+    width: 10rem;
+  }
+}
+
+
+@media (max-width: 400px){
+  html{
+    font-size: 40%;
+  }
+}

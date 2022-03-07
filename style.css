@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --very-dark: hsl(212, 27%, 19%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Fraunces', serif;
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  color: hsl(213, 9%, 39%);
+  margin: 3rem 0;
+  text-align: start;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+header {
+  background-image: url('./images/desktop/image-header.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: min(100vw,650px);
+}
+
+
+header .top {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+header img {
+  height: 4rem;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header nav ul a {
+  text-decoration: none;
+}
+
+header nav ul a li {
+  list-style: none;
+  margin-left: 3rem;
+  color: var(--white);
+}
+
+header nav ul #btn-contact li {
+  background-color: var(--white);
+  color: var(--very-dark);
+  padding: 0.9rem;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+header nav ul #btn-contact li:hover {
+  background-color: rgba(25, 83, 107, 0.2);
+  color: var(--white);
+
+}
+
+header h1 {
+  color: var(--white);
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+
+main{
+  width: 100%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(436px, 1fr));
+}
+
+section img{
+  width: 100%;
+}
+
+main section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10rem;
+}
+
+a.learn-more {
+  text-decoration: none;
+  color: var(--very-dark);
+}
+
+ .border {
+   background-color: red;
+  position: relative;
+  height: 10px;
+  width: 110px;
+  bottom: 10px;
+  left: -2px;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.border-1{
+  background-color:  hsl(51, 100%, 49%, 0.4);
+  transition: 0.4s;
+}
+
+.border-2{
+  background-color:  hsl(7, 99%, 70%, 0.4);
+  transition: 0.4s;
+}
+
+a:hover ~ .border-1{
+  background-color:  rgb(250, 212, 0);
+}
+
+a:hover ~ .border-2{
+  background-color:  hsl(7, 99%, 70%);
+}
+
+#fruit {
+  display: flex;
+  flex-direction: row;
+}
+
+#fruit #grafic p{
+  margin-top: 5rem;
+}
+
+#fruit #photography p,
+#fruit #photography p{
+  margin-top: 7rem;
+}
+
+#fruit #grafic h2,
+#fruit #grafic p {
+  color: hsl(167, 40%, 24%);
+}
+
+#fruit #photography h2,
+#fruit #photography p {
+  color: hsl(198, 62%, 26%);
+}
+
+#fruit img {
+  width: 100%;
+}
+
+#fruit section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#fruit section h2,
+#fruit section p {
+  position: absolute;
+  width: 60%;
+  text-align: center;
+  top: 60%;
+}
+
+#note {
+  display: flex;
+  flex-direction: column;
+}
+
+#note h2 {
+  text-align: center;
+  margin: 10rem 0;
+  color: hsl(213, 9%, 39%);
+}
+
+#comments {
+  display: flex;
+  flex-direction: row;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+blockquote img {
+  width: 10rem;
+  border-radius: 100px;
+}
+
+blockquote p {
+  text-align: center;
+}
+
+blockquote footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+blockquote footer p {
+  margin: 0;
+}
+
+#gallery {
+  display: flex;
+  width: 100%;
+  margin-top: 15rem;
+}
+
+#gallery img {
+  width: 25%;
+}
+
+#footer {
+  background-color: hsl(168, 34%, 41%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+
+#footer ul {
+  display: flex;
+}
+
+#footer img {
+  color: hsl(167, 40%, 24%);
+}
+
+#footer ul li {
+  padding: 2rem 1rem;
+  list-style: none;
+  color: hsl(167, 40%, 24%);
+  font-family: 'Barlow', sans-serif;
+  transition: 0.4s;
+}
+
+#footer ul li:hover {
+  filter: invert(100%) sepia(0%) saturate(25%) hue-rotate(70deg)
+    brightness(108%) contrast(108%);
+  cursor: pointer;
+}
+
+.yo {
+  filter: invert(28%) sepia(10%) saturate(2071%) hue-rotate(116deg)
+    brightness(95%) contrast(90%);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+  text-decoration: none;
+}
